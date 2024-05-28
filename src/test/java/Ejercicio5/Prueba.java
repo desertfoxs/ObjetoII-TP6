@@ -32,7 +32,7 @@ public class Prueba {
     @Test
     public void registroParticipanteDecoratorInglesEspañol() {
 
-        var enviador = new EnviarGmailFelicitaciones(new EnviarGmailCongratulation(new EnviarGmail()));
+        var enviador  = new EnviarGmailFelicitaciones(new EnviarGmailCongratulation(new EnviarGmail()));
 
         Participante participante0 = new Participante("Angel", 44705032);
         Concurso concurso0 = new Concurso(2, "Boletira", LocalDateTime.now().plusMonths(1), enviador);
